@@ -1,7 +1,7 @@
 import java.util.Map;
 
 public interface Segment {
-    String evaluates(Map<String, String> variables);
+    String evaluate(Map<String, String> variables);
 }
 
 

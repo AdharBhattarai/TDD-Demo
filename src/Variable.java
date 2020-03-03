@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class Variable implements Segment {
     private String name;
 
@@ -8,4 +10,13 @@ public class Variable implements Segment {
     public boolean equals(Object other) {
         return name.equals(((Variable) other).name);
     }
+
+    public String evaluate(Map<String, String> variables) {
+        if(!variables.containsKey(name)){
+            throw new Template.MissingValueException("No value for ${" + name + "}");
+        }
+        return variables.get(name);
+    }
+
+
 }
