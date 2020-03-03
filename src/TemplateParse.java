@@ -18,7 +18,7 @@ public class TemplateParse {
         Pattern pattern = Pattern.compile("\\$\\{[^}]*\\}");        // Truncates \$ \{ neglects } * gets everything upto } ((**if not it takes the whole line. Right now it is taking only one variable at a time.
         Matcher matcher = pattern.matcher(src);
         int index = 0;
-        while (matcher.find()) {   // ${a}
+        while (matcher.find()) {
             addPrecedingPlainText(segs, src, matcher, index);
             addVariable(segs, src, matcher);
             index = matcher.end();
@@ -48,5 +48,9 @@ public class TemplateParse {
         }
     }
 
+    public static void main(String[] args) {
+        TemplateParse templateParse = new TemplateParse();
+        templateParse.parse("${a} : ${b}");
+    }
 
 }

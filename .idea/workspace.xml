@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b43dffc9-b9ab-48a9-a46f-d74c02c6cb62" name="Default Changelist" comment="" />
+    <list default="true" id="b43dffc9-b9ab-48a9-a46f-d74c02c6cb62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDD/TemplateParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/TemplateParse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDD/TestTemplateParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/TestTemplateParse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemplateParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemplateParse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestTemplateParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTemplateParse.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +22,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YMAOTJV3VOXdq0pCBa1h2AUrw3" />
   <component name="ProjectViewState">
@@ -26,10 +38,25 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.TestTemplateParse">
+  <component name="RunManager" selected="JUnit.TestTemplate">
+    <configuration name="Template" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Template" />
+      <module name="TDD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateParse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TemplateParse" />
+      <module name="TDD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <option name="PACKAGE_NAME" value="" />
@@ -48,16 +75,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTemplateParse.emptyTemplateRendersAsEmptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTemplateParse" />
-      <option name="METHOD_NAME" value="emptyTemplateRendersAsEmptyString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestTemplateParse.parsingMultipleVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <option name="PACKAGE_NAME" value="" />
@@ -68,23 +85,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTemplateParse.templateWithOnlyPlainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTemplateParse" />
-      <option name="METHOD_NAME" value="templateWithOnlyPlainTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestTemplateParse" />
-        <item itemvalue="JUnit.TestTemplateParse.emptyTemplateRendersAsEmptyString" />
-        <item itemvalue="JUnit.TestTemplateParse.parsingMultipleVariables" />
         <item itemvalue="JUnit.TestTemplate" />
-        <item itemvalue="JUnit.TestTemplateParse.templateWithOnlyPlainTest" />
+        <item itemvalue="JUnit.TestTemplateParse" />
+        <item itemvalue="Application.TemplateParse" />
+        <item itemvalue="Application.Template" />
+        <item itemvalue="JUnit.TestTemplateParse.parsingMultipleVariables" />
       </list>
     </recent_temporary>
   </component>
@@ -101,6 +108,7 @@
       <workItem from="1582742060643" duration="14130000" />
       <workItem from="1582831002211" duration="10562000" />
       <workItem from="1583172847007" duration="14819000" />
+      <workItem from="1583266212099" duration="5572000" />
     </task>
     <servers />
   </component>
@@ -112,45 +120,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="360" y="120" width="1200" height="800" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583185552917" />
-    <state width="419" height="466" key="DebuggerActiveHint" timestamp="1582835804780">
+    <state width="424" height="466" key="DebuggerActiveHint" timestamp="1583271395093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="419" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582835804780" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1583185850906">
+    <state width="424" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271395093" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1583271820048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583185850906" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1583185850906">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1583271820048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583185850906" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1583185850906">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1583271820048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583185850906" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1583185850906">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1583271820048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583185850906" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583179314070">
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583271441662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583179314070" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583179314070">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271441662" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1583271441662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583179314070" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583179314070">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271441662" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1583271441662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583179314070" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583179314070">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271441662" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1583271441662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583179314070" />
-    <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583172847015">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271441662" />
+    <state x="-1259" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583266217635">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1259" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266217635" />
     <state x="661" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583172847015" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582742167028">
       <screen x="0" y="0" width="1920" height="1040" />

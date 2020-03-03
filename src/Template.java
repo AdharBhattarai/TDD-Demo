@@ -1,6 +1,7 @@
 import javafx.css.Match;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -23,27 +24,40 @@ public class Template {
     }
 
     public String evaluate() {
-        String result = replaceVariables();
-        checkForMissingValues(result);
-        return result;
+        TemplateParse parser = new TemplateParse();
+        List<String> segments = parser.parse(templateText);
+        return concatenate(segments);
     }
 
-    private String replaceVariables() {
-        String result = templateText;
-        for (Entry<String, String> entry : variables.entrySet()) {
-            String regex = "\\$\\{" + entry.getKey() + "\\}";
-
-            result = result.replaceAll(regex, entry.getValue());
+    private String concatenate(List<String> segments) {
+        StringBuilder result = new StringBuilder();
+        for (String segment : segments) {
+            append(segment, result);
         }
-        return result;
+        return result.toString();
     }
 
-    private void checkForMissingValues(String result) {
-        Matcher m = Pattern.compile("\\$\\{.+\\}").matcher(result);
-        if (m.find()) {
-            throw new MissingValueException("No value for " + m.group());
+    private void append(String segment, StringBuilder result) {
+        if (isVariable(segment)) {
+            evaluateVariable(segment, result);
+        } else {
+            result.append(segment);
         }
     }
+
+    private boolean isVariable(String segment) {
+        return segment.startsWith("${") && segment.endsWith("}");
+    }
+
+
+    private void evaluateVariable(String segment, StringBuilder result) {
+        String var = segment.substring(2, segment.length() - 1);
+        if (!variables.containsKey(var)) {
+            throw new MissingValueException("No value for " + segment);
+        }
+        result.append(variables.get(var));
+    }
+
 
     public class MissingValueException extends RuntimeException {
         public MissingValueException(String message) {
@@ -53,10 +67,8 @@ public class Template {
 
     public static void main(String[] args) {
 
-        Template temp = new Template("hi");
-        temp.set("one", "${one}");
-        temp.set("two", "${three}");
-        temp.set("three", "${two}");
+        Template temp = new Template("hi, ${adhar}");
+        temp.set("adhar", "${one}");
         temp.evaluate();
     }
 }

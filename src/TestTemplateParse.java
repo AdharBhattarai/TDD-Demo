@@ -29,8 +29,12 @@ public class TestTemplateParse {
         assertSegments(segments, "plain text only");
     }
 
+    @Test
     public void parsingMultipleVariables() throws Exception {
         List<String> segments = parse("${a}:${b}:${c}");
         assertSegments(segments, "${a}", ":", "${b}", ":", "${c}");
     }
+    @Test
+
+    public void parsingTemplateIntoSegmentO
 }
