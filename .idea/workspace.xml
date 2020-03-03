@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b43dffc9-b9ab-48a9-a46f-d74c02c6cb62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TDD/TemplateParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/TemplateParse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TDD/TestTemplateParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/TestTemplateParse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TemplateParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemplateParse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestTemplateParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTemplateParse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,8 +40,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.TestTemplate">
+  <component name="RunManager" selected="JUnit.TestTemplateParse">
     <configuration name="Template" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Template" />
       <module name="TDD" />
@@ -75,11 +77,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTemplateParse.parsingMultipleVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTemplateParse.parsingTemplateIntoSegmentObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestTemplateParse" />
-      <option name="METHOD_NAME" value="parsingMultipleVariables" />
+      <option name="METHOD_NAME" value="parsingTemplateIntoSegmentObjects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestTemplate" />
         <item itemvalue="JUnit.TestTemplateParse" />
+        <item itemvalue="JUnit.TestTemplate" />
+        <item itemvalue="JUnit.TestTemplateParse.parsingTemplateIntoSegmentObjects" />
         <item itemvalue="Application.TemplateParse" />
         <item itemvalue="Application.Template" />
-        <item itemvalue="JUnit.TestTemplateParse.parsingMultipleVariables" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +110,7 @@
       <workItem from="1582742060643" duration="14130000" />
       <workItem from="1582831002211" duration="10562000" />
       <workItem from="1583172847007" duration="14819000" />
-      <workItem from="1583266212099" duration="5572000" />
+      <workItem from="1583266212099" duration="9460000" />
     </task>
     <servers />
   </component>
@@ -116,6 +118,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1583272402841">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583272402841" />
     <state x="360" y="120" width="1200" height="800" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583185552917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -124,26 +130,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="424" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271395093" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1583271820048">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1583274233361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1583271820048">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583274233361" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1583274233361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1583271820048">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583274233361" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1583274233361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1583271820048">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583274233361" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1583274233361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271820048" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583274233361" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583271441662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

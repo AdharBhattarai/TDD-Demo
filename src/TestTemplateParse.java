@@ -34,7 +34,13 @@ public class TestTemplateParse {
         List<String> segments = parse("${a}:${b}:${c}");
         assertSegments(segments, "${a}", ":", "${b}", ":", "${c}");
     }
+
     @Test
 
-    public void parsingTemplateIntoSegmentO
+    public void parsingTemplateIntoSegmentObjects() throws Exception {
+        TemplateParse p = new TemplateParse();
+        List<Segment> segments = p.parseSegments("a ${b} c ${d}");
+        assertSegments(segments, new PlainText("a "), new Variable("b"),
+                new PlainText(" c "), new Variable("d"));
+    }
 }
