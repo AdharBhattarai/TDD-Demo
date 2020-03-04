@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b43dffc9-b9ab-48a9-a46f-d74c02c6cb62" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TDD/TemplateParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/TemplateParse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlainText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlainText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Segment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TemplateParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemplateParse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestPlainTextSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestPlainTextSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestTemplateParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTemplateParse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +41,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.TestPlainTextSegment">
+  <component name="RunManager" selected="JUnit.TestTemplate">
     <configuration name="TestPlainTextSegment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <option name="PACKAGE_NAME" value="" />
@@ -95,11 +90,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestTemplate" />
+        <item itemvalue="JUnit.TestTemplateParse" />
         <item itemvalue="JUnit.TestPlainTextSegment" />
         <item itemvalue="JUnit.TestVariableSegment" />
         <item itemvalue="JUnit.TestVariableSegment.variableEvaluatesToItsValue" />
-        <item itemvalue="JUnit.TestTemplate" />
-        <item itemvalue="JUnit.TestTemplateParse" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +111,8 @@
       <workItem from="1582742060643" duration="14130000" />
       <workItem from="1582831002211" duration="10562000" />
       <workItem from="1583172847007" duration="14819000" />
-      <workItem from="1583266212099" duration="12152000" />
+      <workItem from="1583266212099" duration="12876000" />
+      <workItem from="1583345544248" duration="1691000" />
     </task>
     <servers />
   </component>
@@ -136,26 +132,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="424" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271395093" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1583278258788">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1583347112288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583278258788" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1583278258788">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583347112288" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1583347112288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583278258788" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1583278258788">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583347112288" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1583347112288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583278258788" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1583278258788">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583347112288" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1583347112288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266288445" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583278258788" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583347112288" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1583271441662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -172,19 +168,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583271441662" />
-    <state x="-1259" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583266217635">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583345563404">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1259" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583266217635" />
-    <state x="661" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583172847015" />
+    <state x="661" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583345563404" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582742167028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582742167028" />
-    <state x="-1570" y="147" width="1552" height="733" key="dock-window-1" timestamp="1583187191224">
+    <state x="-1617" y="105" width="1545" height="718" key="dock-window-1" timestamp="1583346514775">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1570" y="147" width="1552" height="733" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583187191224" />
+    <state x="-1617" y="105" width="1545" height="718" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583346514775" />
+    <state x="-1547" y="155" width="1545" height="733" key="dock-window-2" timestamp="1583346886912">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1547" y="155" width="1545" height="733" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1583346886912" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TDD$TestTemplate.ic" NAME="TestTemplate Coverage Results" MODIFIED="1582743811196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

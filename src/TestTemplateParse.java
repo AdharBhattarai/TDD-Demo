@@ -1,10 +1,10 @@
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestTemplateParse {
 
@@ -19,8 +19,7 @@ public class TestTemplateParse {
 
     @Test
     public void emptyTemplateRendersAsEmptyString() throws Exception {
-        List<String> segments = parse("");
-        assertSegments(segments, "");
+        assertTrue(parse("").isEmpty());
     }
 
     @Test

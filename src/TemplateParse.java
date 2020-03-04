@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -8,9 +7,9 @@ public class TemplateParse {
 
     public List<String> parse(String template) {
         List<String> segments = new ArrayList<String>();
-        int index = collectSegments(segments, template);
+        int index = collectSegments(segments, template, 0);
         addTail(segments, template, index);
-        addEmptyStringIfTemplateWasEmpty(segments);
+//        addEmptyStringIfTemplateWasEmpty(segments);
         return segments;
     }
 
@@ -32,10 +31,9 @@ public class TemplateParse {
         return segment.startsWith("${") && segment.endsWith("}");
     }
 
-    private int collectSegments(List<String> segs, String src) {
+    private int collectSegments(List<String> segs, String src, int index) {
         Pattern pattern = Pattern.compile("\\$\\{[^}]*\\}");        // Truncates \$ \{ neglects } * gets everything upto } ((**if not it takes the whole line. Right now it is taking only one variable at a time.
         Matcher matcher = pattern.matcher(src);
-        int index = 0;
         while (matcher.find()) {
             addPrecedingPlainText(segs, src, matcher, index);
             addVariable(segs, src, matcher);
@@ -60,11 +58,11 @@ public class TemplateParse {
         }
     }
 
-    private void addEmptyStringIfTemplateWasEmpty(List<String> segs) {
-        if (segs.isEmpty()) {
-            segs.add("");
-        }
-    }
+//    private void addEmptyStringIfTemplateWasEmpty(List<String> segs) {
+//        if (segs.isEmpty()) {
+//            segs.add("");
+//        }
+//    }
 
 
     public static void main(String[] args) {
